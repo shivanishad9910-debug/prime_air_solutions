@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prime Air Solutions provides AC installation, repair, servicing and maintenance in Surat, Gujarat.">
+  <title>Prime Air Solutions | AC Service in Surat</title>
+  <style>
+    :root{--navy:#071b35;--blue:#0878d1;--cyan:#27c5e8;--ink:#14263d;--muted:#62748a;--pale:#eef8fc;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+    a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+    header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:10;box-shadow:0 4px 18px #00152b30}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 0}
+    .brand{font-size:20px;font-weight:800;letter-spacing:.3px}.brand span{color:var(--cyan)}
+    nav{display:flex;gap:22px;align-items:center;font-size:14px}nav a:hover{color:var(--cyan)}
+    .nav-cta,.btn{display:inline-block;background:var(--cyan);color:#062039;padding:11px 18px;border-radius:8px;font-weight:800}
+    .hero{background:linear-gradient(120deg,#061a33 0%,#0b3b67 62%,#0878a9 100%);color:#fff;padding:82px 0 76px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:38px}
+    .eyebrow{color:#8beaff;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800}
+    h1{font-size:clamp(38px,5.5vw,62px);line-height:1.08;margin:14px 0 18px}
+    .hero p{color:#d9e9f7;font-size:18px;max-width:600px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn-outline{display:inline-block;border:1px solid #b7dff5;color:#fff;padding:10px 18px;border-radius:8px;font-weight:700}
+    .hero-art{min-height:280px;border:1px solid #ffffff30;border-radius:24px;background:linear-gradient(145deg,#ffffff18,#ffffff08);display:grid;place-items:center;position:relative}
+    .ac-unit{width:76%;height:115px;border-radius:18px;background:linear-gradient(#fff,#d9e8f0);box-shadow:0 25px 45px #00152b66;position:relative}
+    .ac-unit:before{content:"";position:absolute;left:8%;right:8%;bottom:17px;height:8px;border-radius:50%;background:#a8c5d5}
+    .ac-unit:after{content:"";position:absolute;right:18px;top:18px;width:9px;height:9px;border-radius:50%;background:#28c6e8;box-shadow:0 0 14px #28c6e8}
+    .air-lines{position:absolute;top:155px;display:flex;gap:28px}.air-lines i{display:block;width:4px;height:68px;border-radius:8px;background:#8beaff;opacity:.8;transform:skew(-18deg)}
+    section{padding:70px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 36px}
+    .section-head .eyebrow{color:var(--blue)}h2{font-size:clamp(28px,4vw,38px);line-height:1.2;margin:8px 0 12px}
+    .section-head p,.muted{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{border:1px solid #e2edf4;border-radius:15px;padding:24px;background:#fff;box-shadow:0 8px 25px #0a31500b}
+    .card .symbol{width:48px;height:48px;border-radius:12px;background:var(--pale);display:grid;place-items:center;font-size:24px;margin-bottom:15px}
+    .card h3{margin:0 0 8px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .about{background:var(--pale)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+    .about-panel{background:var(--navy);color:white;padding:30px;border-radius:18px}
+    .about-panel h3{font-size:25px;margin:0 0 12px}.about-panel p{color:#d6e7f4}
+    .checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+    .checks span{font-weight:700;font-size:14px}.checks span:before{content:"✓";color:#13bde2;margin-right:8px}
+    .types{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+    .type{background:#f2f8fb;border:1px solid #dfedf4;border-radius:999px;padding:11px 18px;font-weight:700}
+    .contact{background:var(--navy);color:#fff}.contact .section-head p{color:#c8d9e8}
+    .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .contact-card{border:1px solid #ffffff25;background:#ffffff0b;border-radius:14px;padding:22px}
+    .contact-card small{color:#9eddf0;text-transform:uppercase;letter-spacing:1px;font-weight:800}
+    .contact-card p{margin:8px 0 0;font-weight:700;overflow-wrap:anywhere}
+    .contact-card a:hover{color:var(--cyan)}
+    footer{background:#041326;color:#b9cad8;padding:22px 0;font-size:13px}
+    .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .float{position:fixed;right:18px;bottom:18px;background:#20bd62;color:#fff;padding:13px 18px;border-radius:999px;font-weight:800;box-shadow:0 8px 25px #001b2d45;z-index:20}
+    @media(max-width:760px){nav{display:none}.hero{padding:58px 0}.hero-grid,.about-grid{grid-template-columns:1fr}.hero-art{min-height:220px}.cards{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr}.checks{grid-template-columns:1fr 1fr}}
+    @media(max-width:480px){.cards{grid-template-columns:1fr}.brand{font-size:18px}.hero p{font-size:16px}.hero-actions a{width:100%;text-align:center}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">PRIME AIR <span>SOLUTIONS</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/918780460789?text=Hello%20Prime%20Air%20Solutions%2C%20I%20need%20AC%20service." target="_blank" rel="noopener">Book on WhatsApp</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">AC Service & Maintenance • Surat, Gujarat</div>
+        <h1>Comfort in every season.</h1>
+        <p>Reliable AC installation, repair and maintenance for your home and workplace. Get in touch with Prime Air Solutions for service support in Surat.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/918780460789?text=Hello%2C%20I%20want%20to%20book%20an%20AC%20service." target="_blank" rel="noopener">Book AC Service</a>
+          <a class="btn-outline" href="tel:+918780460789">Call 87804 60789</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a wall-mounted air conditioner">
+        <div class="ac-unit"></div><div class="air-lines"><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">What we do</div><h2>Our AC Services</h2><p>Practical AC solutions to help keep your cooling system working smoothly.</p></div>
+      <div class="cards">
+        <article class="card"><div class="symbol">❄️</div><h3>AC Servicing</h3><p>Routine cleaning and maintenance to support efficient cooling and airflow.</p></article>
+        <article class="card"><div class="symbol">🛠️</div><h3>AC Repair</h3><p>Fault checking and repair support for common air-conditioning problems.</p></article>
+        <article class="card"><div class="symbol">🏠</div><h3>Installation</h3><p>AC installation and setup for residential and commercial spaces.</p></article>
+        <article class="card"><div class="symbol">🔧</div><h3>Maintenance</h3><p>Preventive maintenance to help keep your AC in good working condition.</p></article>
+        <article class="card"><div class="symbol">💨</div><h3>Cooling Checks</h3><p>Inspection of cooling performance and basic system operation.</p></article>
+        <article class="card"><div class="symbol">📞</div><h3>Service Support</h3><p>Contact us to discuss your AC issue and arrange a service visit.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div><div class="eyebrow">About Prime Air Solutions</div><h2>Professional AC care, with a personal touch.</h2>
+        <p class="muted">Prime Air Solutions is an AC service business based in Surat, Gujarat. We provide installation, servicing, repair and maintenance support for different types of air conditioners.</p>
+        <div class="checks"><span>Residential AC</span><span>Commercial AC</span><span>Installation</span><span>Repair & servicing</span></div>
+      </div>
+      <div class="about-panel"><h3>Need help with your AC?</h3><p>Tell us your AC type and the issue you are facing. We’ll help you discuss the next service step.</p><a class="btn" href="https://wa.me/918780460789?text=Hello%20Prime%20Air%20Solutions%2C%20I%20need%20help%20with%20my%20AC." target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Systems we work with</div><h2>AC Types</h2><p>Service support for a range of air-conditioning systems.</p></div>
+      <div class="types"><span class="type">Split AC</span><span class="type">Window AC</span><span class="type">Cassette AC</span><span class="type">Ductable AC</span></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Get in touch</div><h2>Contact Prime Air Solutions</h2><p>For AC service enquiries and bookings in Surat, Gujarat.</p></div>
+      <div class="contact-grid">
+        <div class="contact-card"><small>Call / WhatsApp</small><p><a href="tel:+918780460789">8780460789</a></p></div>
+        <div class="contact-card"><small>Email</small><p><a href="mailto:shivanishad9910@gmail.com">shivanishad9910@gmail.com</a></p></div>
+        <div class="contact-card"><small>Service Location</small><p>Surat, Gujarat, India</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Prime Air Solutions. All rights reserved.</span><span>AC Installation • Repair • Servicing</span></div></footer>
+<a class="float" href="https://wa.me/918780460789?text=Hello%20Prime%20Air%20Solutions%2C%20I%20need%20AC%20service." target="_blank" rel="noopener" aria-label="Chat with Prime Air Solutions on WhatsApp">WhatsApp</a>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
